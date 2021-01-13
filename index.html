@@ -1,6 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 
+// tmp data    
+<script type="text/javascript" src="data/data.json"></script>
+    
 <head>
 
   <meta charset="utf-8">
@@ -8,7 +12,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Clean Blog - Start Bootstrap Theme</title>
+  <title>Blog - Start Bootstrap Theme & Angular</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,19 +27,21 @@
 
 </head>
 
-<body>
+<body ng-app="myApp">
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+      <a class="navbar-brand" href="index.html">|||||</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
+          <menu-tmp></menu-tmp>
+            
+          <!--<li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
@@ -46,7 +52,8 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
-          </li>
+          </li>-->
+            
         </ul>
       </div>
     </div>
@@ -59,8 +66,8 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>Clean Blog</h1>
-            <span class="subheading">A Blog Theme by Start Bootstrap</span>
+            <h1>Blog</h1>
+            <span class="subheading">A Blog for study</span>
           </div>
         </div>
       </div>
@@ -71,7 +78,10 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="post-preview">
+          
+          <post-tmp></post-tmp>
+          
+<!--        <div class="post-preview">
           <a href="post.html">
             <h2 class="post-title">
               Man must explore, and this is exploration at its greatest
@@ -123,7 +133,8 @@
             <a href="#">Start Bootstrap</a>
             on July 8, 2019</p>
         </div>
-        <hr>
+        <hr>-->
+          
         <!-- Pager -->
         <div class="clearfix">
           <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
@@ -139,7 +150,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <ul class="list-inline text-center">
+            
+          <!--<ul class="list-inline text-center">
             <li class="list-inline-item">
               <a href="#">
                 <span class="fa-stack fa-lg">
@@ -164,7 +176,8 @@
                 </span>
               </a>
             </li>
-          </ul>
+          </ul>-->
+            
           <p class="copyright text-muted">Copyright &copy; Your Website 2020</p>
         </div>
       </div>
@@ -177,6 +190,9 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/clean-blog.min.js"></script>
+    
+  <!-- Augular scripts for test -->
+  <script src="js/angular-test.js"></script>
 
 </body>
 
