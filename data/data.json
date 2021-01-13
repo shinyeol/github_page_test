@@ -8,12 +8,6 @@ var data =
             "tmp" : ""
         },
         {
-            "name" : "about",
-            "url" : "about.html",
-            "desc" : "",
-            "tmp" : ""
-        },
-        {
             "name" : "sample post",
             "url" : "post.html",
             "desc" : "",
@@ -28,13 +22,25 @@ var data =
     ],
     "posts": [
         {
-            "title" : "AngularJS is a JavaScript Framework",
-            "subtitle" : "AngularJS is a JavaScript framework written in JavaScript. AngularJS is distributed as a JavaScript file, and can be added to a web page with a script tag:",
-            "url" : "https://www.w3schools.com/angular/angular_intro.asp",
+            "title" : "Test 0",
+            "subtitle" : "Test subtitle",
+            "url" : "index.html",
             "author" : "admin",
         },
         {
             "title" : "Test 1",
+            "subtitle" : "Test subtitle",
+            "url" : "index.html",
+            "author" : "admin",
+        },
+        {
+            "title" : "Test 2",
+            "subtitle" : "Test subtitle",
+            "url" : "index.html",
+            "author" : "admin",
+        },
+        {
+            "title" : "Test 3",
             "subtitle" : "Test subtitle",
             "url" : "index.html",
             "author" : "admin",
