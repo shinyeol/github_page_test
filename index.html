@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 
-<!--// tmp data -->   
-<script type="text/javascript" src="data/data.json"></script>
-    
 <head>
 
   <meta charset="utf-8">
@@ -13,6 +9,12 @@
   <meta name="author" content="">
 
   <title>Blog - Start Bootstrap Theme & AngularJS</title>
+
+  <!-- angularJS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+  <!-- tmp data -->   
+  <script type="text/javascript" src="data/data.json"></script>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,7 +26,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/clean-blog.min.css" rel="stylesheet">
-
+  
 </head>
 
 <body ng-app="myApp" ng-controller="namesCtrl">
@@ -32,7 +34,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="index.html">|||||</a>
+      <a class="navbar-brand" href="index.html">|||</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -47,6 +49,7 @@
     </div>
   </nav>
 
+  
   <!-- Page Header -->
   <header class="masthead" style="background-image: url('img/home-bg.jpg')">
     <div class="overlay"></div>
@@ -66,9 +69,19 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-          
-          <post-tmp></post-tmp>
-          
+        <div ng-repeat="post in posts" class="post-preview">
+            <a href="{{post.url}}">
+            <h2 class="post-title">{{post.title}}
+            </h2>
+            <h3 class="post-subtitle">{{post.subtitle}}
+            </h3>
+            </a>
+            <p class="post-meta">Posted by {{post.author}}
+              <!-- <a href="#">{{post.author}}</a> -->
+            </p>
+            <hr>
+        </div>
+        
         <!-- Pager -->
         <div class="clearfix">
           <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
