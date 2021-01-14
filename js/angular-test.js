@@ -5,14 +5,14 @@ function init() {
     
     // bind data for memus
     var menuList = data.menus;
-    var manuTmp = [];
+    // var manuTmp = [];
     
-    for(var i = 0; i < menuList.length; i++) {
-        manuTmp += '<li class="nav-item">'
-            + '<a class="nav-link" href="' + menuList[i].url + '">'+ menuList[i].name +'</a>'
-            + '</li>';
+    // for(var i = 0; i < menuList.length; i++) {
+    //     manuTmp += '<li class="nav-item">'
+    //         + '<a class="nav-link" href="' + menuList[i].url + '">'+ menuList[i].name +'</a>'
+    //         + '</li>';
         
-    }
+    // }
     
     // bind data for posts
     var postList = data.posts;
@@ -39,17 +39,17 @@ function init() {
     var app = angular.module("myApp", []);
     
     // controller
-/*    app.controller('myCtrl', function($scope) {
-      $scope.manuNames = manuNames;
-    });*/
+    app.controller('namesCtrl', function($scope) {
+      $scope.menus = menuList;
+    });
     
     
     // directive
-    app.directive("menuTmp", function() {
-      return {
-        template : manuTmp
-      };
-    });
+    // app.directive("menuTmp", function() {
+    //   return {
+    //     template : manuTmp
+    //   };
+    // });
     
     app.directive("postTmp", function() {
       return {
